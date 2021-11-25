@@ -31,8 +31,21 @@ botaoAdicionar.addEventListener('click', imprimindoLista);
 // apagar toda a lista
 const botaoApagar = document.getElementById('apaga-tudo');
 function apagar() {
+// peguei a ideia do while daqui https://developer.mozilla.org/pt-BR/docs/Web/API/Node/removeChild
   while (elementoOl.firstChild) {
     elementoOl.removeChild(elementoOl.firstChild);
   }
 }
 botaoApagar.addEventListener('click', apagar);
+
+// remover finalizados
+const removerFinalizados = document.getElementById('remover-finalizados');
+const tarefasFinalizadas = document.getElementsByClassName('completed');
+function apagarFinalizados() {
+  if (tarefasFinalizadas.length > 0) {
+    for (let i = tarefasFinalizadas.length - 1; i >= 0; i -= 1) {
+      tarefasFinalizadas[i].remove();
+    }
+  }
+}
+removerFinalizados.addEventListener('click', apagarFinalizados);

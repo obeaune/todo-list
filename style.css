@@ -1,10 +1,10 @@
 body {
-  background-color: rgb(50, 175, 50);
+  background-color: rgb(50 , 175 , 50);
 }
 
 header {
   font-size: 40px;
-  font-weight: bolder;
+  font-weight: 700;
   padding: 6px;
 }
 
@@ -12,27 +12,35 @@ p {
   padding: 5px;
   font-style: italic;
   font-size: 16px;
-  color: rgb(54, 54, 54);
+  color: rgb(54 , 54 , 54);
 }
 
-input, button {
+input , button {
   padding: 10px;
 }
 
 #criar-tarefa {
   border-radius: 15px;
   margin-left: 8px;
-  background-color: rgb(7, 199, 0);
-  font-weight: bolder;
+  background-color: rgb(11 , 112 , 195);
+  font-weight: 700;
+  color: white;
+}
+
+#remover-finalizados {
+  border-radius: 15px;
+  margin-left: 8px;
+  background-color: rgb(11 , 112 , 195);
+  font-weight: 700;
   color: white;
 }
 
 #apaga-tudo {
   border-radius: 15px;
   margin-left: 8px;
-  background-color: rgb(187, 0, 0);
+  background-color: rgb(187 , 0 , 0);
   color: white;
-  font-weight: bolder;
+  font-weight: 700;
 }
 
 #conteudo-bonitinho {
@@ -45,7 +53,7 @@ input, button {
 }
 
 .selected {
-  background-color: rgb(128, 128, 128);
+  background-color: gray;
 }
 
 .completed {
