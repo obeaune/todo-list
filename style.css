@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(50 , 175 , 50);
+  background-image: url('WallPaperProjetoIdeiaTres.png');
 }
 
 header {
@@ -19,19 +19,42 @@ input , button {
   padding: 10px;
 }
 
+/* tirei duvidas para importar fontes aqui https://bityli.com/a6VPXy */
+#conteudo-bonitinho {
+  font-family: IBM Plex serif, serif;
+  text-align: center;
+  margin: 100px 350px;
+  background-color: white;
+  padding: 15px 20px 20px;
+  border-radius: 25px;
+}
+
 #criar-tarefa {
   border-radius: 15px;
   margin-left: 8px;
-  background-color: rgb(11 , 112 , 195);
+  background-color: rgb(155 , 102 , 116);
   font-weight: 700;
+  color: white;
+  transition-duration: 1s;
+}
+
+/* método aprendido no freecodecamp e revisado aqui https://bityli.com/d4YmnO */
+#criar-tarefa:hover {
+  background-color: rgb(116 , 155 , 102);
   color: white;
 }
 
 #remover-finalizados {
   border-radius: 15px;
   margin-left: 8px;
-  background-color: rgb(11 , 112 , 195);
+  background-color: rgb(155 , 102 , 116);
   font-weight: 700;
+  color: white;
+  transition-duration: 1s;
+}
+
+#remover-finalizados:hover {
+  background-color: rgb(102 , 155 , 141);
   color: white;
 }
 
@@ -41,15 +64,12 @@ input , button {
   background-color: rgb(187 , 0 , 0);
   color: white;
   font-weight: 700;
+  transition-duration: 1s;
 }
 
-#conteudo-bonitinho {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
-  margin: 100px 300px;
-  background-color: white;
-  padding: 15px 50px 20px 14px;
-  border-radius: 25px;
+#apaga-tudo:hover {
+  background-color: rgb(104 , 0 , 0);
+  color: white;
 }
 
 .selected {
