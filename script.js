@@ -7,7 +7,8 @@ function selectItem(event) {
   event.target.classList.toggle('selected');
 }
 
-function tarefaCompleta(event) {
+// marcar como completa
+function marcarComoCompleta(event) {
   event.target.classList.toggle('completed');
 }
 
@@ -20,9 +21,18 @@ function imprimindoLista() {
     const item = document.createElement('li');
     item.innerHTML = input.value;
     item.addEventListener('click', selectItem);
-    item.addEventListener('dblclick', tarefaCompleta);
+    item.addEventListener('dblclick', marcarComoCompleta);
     elementoOl.appendChild(item);
     input.value = '';
   }
 }
 botaoAdicionar.addEventListener('click', imprimindoLista);
+
+// apagar toda a lista
+const botaoApagar = document.getElementById('apaga-tudo');
+function apagar() {
+  while (elementoOl.firstChild) {
+    elementoOl.removeChild(elementoOl.firstChild);
+  }
+}
+botaoApagar.addEventListener('click', apagar);
